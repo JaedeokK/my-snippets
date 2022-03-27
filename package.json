@@ -1,23 +1,60 @@
 {
-  "name": "mysnippets",
-  "displayName": "MySnippets",
-  "description": "this is my snippets",
-  "version": "0.0.1",
+  "name": "real-my-snippets",
+  "displayName": "My Snippets",
+  "description": "These are actually my snippets, not just my snippets by name.",
+  "icon": "static/img/cat.png",
+  "version": "1.0.0",
+  "publisher": "JaedeokKim",
   "engines": {
     "vscode": "^1.65.0"
   },
-  "categories": [
-    "Other"
-  ],
-  "activationEvents": [
-    "onCommand:mysnippets.helloWorld"
-  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jdcoder27/my-snippets"
+  },
+  "activationEvents": [],
   "main": "./out/extension.js",
+  "browser": "./out/extension.js",
+  "keywords": [
+    "snippets",
+    "my snippets"
+  ],
+  "categories": [
+    "Snippets"
+  ],
   "contributes": {
-    "commands": [
+    "snippets": [
       {
-        "command": "mysnippets.helloWorld",
-        "title": "Hello World"
+        "language": "typescriptreact",
+        "path": "./snippets/react-ts.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/react-ts.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/next-ts.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/next-ts.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/util.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/util.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/util.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/util.json"
       }
     ]
   },
