@@ -1,70 +1,214 @@
-# mysnippets README
+# My Snippet!
 
-This is the README for your extension "mysnippets". After writing up a brief description, we recommend including the following sections.
+This may or may not help you.\
+These are actually my snippets, not just my snippets by name.\
+It will be updated as per my needs and no support for the feature will be provided.\
+This means I can add or remove features and modify existing ones as my needs.
 
-## Features
+## Snippets
+### React(ts)
+| Snippet | Renders                                          |
+| ------- | ------------------------------------------------ |
+| `fc`    | Functional Component                             |
+| `ifc`   | Import(FC) Functional Component                  |
+| `efc`   | Export Functional Component                      |
+| `iefc`  | Import(FC) Export Functional Component           |
+| `fce`   | Functional Component Export Default              |
+| `ifce`  | Import(FC) Functional Component Export Default   |
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+### Next.js(ts)
+| Snippet | Renders                                          |
+| ------- | ------------------------------------------------ |
+| `np`    | Next Page                                        |
+| `gsp`   | Get Static Props                                 |
+| `gssp`  | Get Server Side Props                            |
 
-For example if there is an image subfolder under your extension project workspace:
+### Utils(js, ts)
+| Snippet | Renders                                          |
+| ------- | ------------------------------------------------ |
+| `af`    | Arrow Function                                   |
+| `fc`    | ClassName Bind                                   |
+| `ifc`   | Console                                          |
+| `efc`   | Console Error                                    |
+| `iefc`  | Console Log                                      |
+| `fce`   | Console Table                                    |
 
-\!\[feature X\]\(images/feature-x.png\)
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Full Expansions
 
-## Requirements
+### React(ts)
+#### fc - Functional Component
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+```typescript
+  interface |Props {
+    |
+  };
 
-## Extension Settings
+  const |: FC<|Props> = (props) => {
+   return (|);
+  };
+```
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+#### ifc - Import FC / Functional Component
 
-For example:
+```typescript
+  import { FC } from 'React';
 
-This extension contributes the following settings:
+  interface |Props {
+    |
+  };
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+  const |: FC<|Props> = (props) => {
+   return (|);
+  };
+```
 
-## Known Issues
+#### efc - Export Functional Component
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+```typescript
+  interface |Props {
+    |
+  };
 
-## Release Notes
+  export const |: FC<|Props> = (props) => {
+   return (|);
+  };
+```
 
-Users appreciate release notes as you update your extension.
+#### iefc - Import FC / Export Functional Component
 
-### 1.0.0
+```typescript
+  import { FC } from 'React';
 
-Initial release of ...
+  interface |Props {
+    |
+  };
 
-### 1.0.1
+  export const |: FC<|Props> = (props) => {
+   return (|);
+  };
+```
 
-Fixed issue #.
+#### fce - Functional Component Export Default
 
-### 1.1.0
+```typescript
+  interface |Props {
+    |
+  };
 
-Added features X, Y, and Z.
+  const |: FC<|Props> = (props) => {
+   return (|);
+  };
 
------------------------------------------------------------------------------------------------------------
-## Following extension guidelines
+  export default |;
+```
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+#### ifce - Import FC, Functional Component Export Default
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+```typescript
+  import { FC } from 'React';
 
-## Working with Markdown
+  interface |Props {
+    |
+  };
 
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+  const |: FC<|Props> = (props) => {
+   return (|);
+  };
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
+  export default |;
+```
 
-### For more information
+### Next.js(ts)
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+#### np - Next Page
 
-**Enjoy!**
+```typescript
+  import { NextPage } from 'next'
+  import { useTranslation } from 'next-i18nex';
+
+  interface |Props {
+    |
+  };
+
+  const |: NextPage<|Props> = (props) => {
+    const { t } useTranslation(`|`);
+
+    return (|);
+  };
+
+  export default |;
+```
+
+#### gsp - Get Static Props
+
+```typescript
+  import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
+  export const | = async ({ locale }): MyGetStaticPropsContext|) => {
+    |
+    return {
+      props: {
+        ...(await serverSideTranslation(locale ['common' |],
+        |
+      }
+    };
+  };
+```
+
+#### gssp - Get Server Side Props
+
+```typescript
+  import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
+  export const | = async ({ locale }): MyGetServerSidePropsContext|) => {
+    |
+    return {
+      props: {
+        ...(await serverSideTranslation(locale ['common' |],
+        |
+      }
+    };
+  };
+```
+
+### Utils(js, ts)
+
+#### af - Arrow Function
+
+```javascript
+  const | = (|) => {|};
+```
+
+#### cx - ClassName Bind
+
+```javascript
+  import className from 'classnames/bind';
+  import styles from './$1.module.scss';
+
+  const cx = classNames.bind(styles);
+```
+
+#### co - Console
+
+```javascript
+  console.|(|);
+```
+
+#### ce - Console Error
+
+```javascript
+  console.error(|);
+```
+
+#### cl - Console Log
+
+```javascript
+  console.log(|);
+```
+
+#### ct - Console Table
+
+```javascript
+  console.table(|);
+```
