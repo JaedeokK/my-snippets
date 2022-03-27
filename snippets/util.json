@@ -1,0 +1,37 @@
+{
+  "Arrow Function": {
+    "prefix": "af",
+    "body": ["const $1 = ($2) => {$3};"],
+    "description": "arrow function"
+  },
+  "ClassName Bind": {
+    "prefix": "cx",
+    "body": [
+      "import className from 'classnames/bind';",
+      "import styles from './$1.module.scss';",
+      "",
+      "const cx = classNames.bind(styles);"
+    ],
+    "description": "cx: classNames.bind"
+  },
+  "Console": {
+    "prefix": "co",
+    "body": ["console.$1($2);"],
+    "description": "console"
+  },
+  "Console Error": {
+    "prefix": "ce",
+    "body": ["console.error($1);"],
+    "description": "console.error"
+  },
+  "Console Log": {
+    "prefix": "cl",
+    "body": ["console.log($1);"],
+    "description": "console.log"
+  },
+  "Console Table": {
+    "prefix": "ct",
+    "body": ["console.table($1);"],
+    "description": "console.table"
+  }
+}

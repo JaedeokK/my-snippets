@@ -1,0 +1,56 @@
+{
+  "Next Page": {
+    "prefix": "np",
+    "body": [
+      "import { NextPage } from 'next';",
+      "import { useTranslation } from 'next-i18nex';",
+      "",
+      "interface $1Props {",
+      "\t$2",
+      "};",
+      "",
+      "const $1: NextPage<$1Props> = (props) => {",
+      "const { t } useTranslation(`$3`);",
+      "",
+      "\treturn ($4);",
+      "};",
+      "",
+      "export default $1;"
+    ],
+    "description": "next page"
+  },
+  "Get Static Props": {
+    "prefix": "gsp",
+    "body": [
+      "import { serverSideTranslations } from 'next-i18next/serverSideTranslations';",
+      "",
+      "export const $1 = async ({ locale }): MyGetStaticPropsContext$2) => {",
+      "\t$4",
+      "\treturn {",
+      "\t\tprops: {",
+      "\t\t\t...(await serverSideTranslation(locale, ['common', $3],",
+      "\t\t\t$5",
+      "\t\t}",
+      "\t};",
+      "};"
+    ],
+    "description": "getStaticProps"
+  },
+  "Get Server Side Props": {
+    "prefix": "gssp",
+    "body": [
+      "import { serverSideTranslations } from 'next-i18next/serverSideTranslations';",
+      "",
+      "export const $1 = async ({ locale }): MyGetServerSidePropsContext$2) => {",
+      "\t$4",
+      "\treturn {",
+      "\t\tprops: {",
+      "\t\t\t...(await serverSideTranslation(locale, ['common', $3],",
+      "\t\t\t$5",
+      "\t\t}",
+      "\t};",
+      "};"
+    ],
+    "description": "getServerSideProps"
+  }
+}
