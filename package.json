@@ -3,7 +3,7 @@
   "displayName": "My Snippets",
   "description": "These are actually my snippets, not just my snippets by name.",
   "icon": "static/img/cat.png",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "publisher": "JaedeokKim",
   "engines": {
     "vscode": "^1.65.0"
