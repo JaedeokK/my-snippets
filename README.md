@@ -10,11 +10,8 @@ This means I can add or remove features and modify existing ones as my needs.
 | Snippet | Renders                                          |
 | ------- | ------------------------------------------------ |
 | `fc`    | Functional Component                             |
-| `ifc`   | Import(FC) Functional Component                  |
 | `efc`   | Export Functional Component                      |
-| `iefc`  | Import(FC) Export Functional Component           |
 | `fce`   | Functional Component Export Default              |
-| `ifce`  | Import(FC) Functional Component Export Default   |
 
 ### Next.js(ts)
 | Snippet | Renders                                          |
@@ -44,21 +41,7 @@ This means I can add or remove features and modify existing ones as my needs.
     |
   };
 
-  const |: FC<|Props> = (props) => {
-   return (|);
-  };
-```
-
-#### ifc - Import FC / Functional Component
-
-```typescript
-  import { FC } from 'react';
-
-  interface |Props {
-    |
-  };
-
-  const |: FC<|Props> = (props) => {
+  const | = (props: |Props) => {
    return (|);
   };
 ```
@@ -70,21 +53,7 @@ This means I can add or remove features and modify existing ones as my needs.
     |
   };
 
-  export const |: FC<|Props> = (props) => {
-   return (|);
-  };
-```
-
-#### iefc - Import FC / Export Functional Component
-
-```typescript
-  import { FC } from 'react';
-
-  interface |Props {
-    |
-  };
-
-  export const |: FC<|Props> = (props) => {
+  export const | = (props: |Props) => {
    return (|);
   };
 ```
@@ -96,23 +65,7 @@ This means I can add or remove features and modify existing ones as my needs.
     |
   };
 
-  const |: FC<|Props> = (props) => {
-   return (|);
-  };
-
-  export default |;
-```
-
-#### ifce - Import FC, Functional Component Export Default
-
-```typescript
-  import { FC } from 'react';
-
-  interface |Props {
-    |
-  };
-
-  const |: FC<|Props> = (props) => {
+  const | = (props: |Props) => {
    return (|);
   };
 
@@ -183,7 +136,7 @@ This means I can add or remove features and modify existing ones as my needs.
 #### cx - ClassName Bind
 
 ```javascript
-  import classNames from 'classnames/bind';
+  import className from 'classnames/bind';
   import styles from './$1.module.scss';
 
   const cx = classNames.bind(styles);

@@ -6,26 +6,10 @@
       "\t$2",
       "}",
       "",
-      "const $1: FC<$1Props> = (props) => {",
-      "\treturn ($3);",
+      "const $1 = (props: $1Props) => {",
       "};"
     ],
     "description": "create functional component"
-  },
-  "Import FC / Functional Component": {
-    "prefix": "ifc",
-    "body": [
-      "import { FC } from 'react';",
-      "",
-      "interface $1Props {",
-      "\t$2",
-      "};",
-      "",
-      "const $1: FC<$1Props> = (props) => {",
-      "\treturn ($3);",
-      "};"
-    ],
-    "description": "import FC, create functional component"
   },
   "Export Functional Component": {
     "prefix": "efc",
@@ -34,26 +18,10 @@
       "\t$2",
       "};",
       "",
-      "export const $1: FC<$1Props> = (props) => {",
-      "\treturn ($3);",
+      "export const $1 = (props: $1Props) => {",
       "};"
     ],
     "description": "create functional component and export"
-  },
-  "Import FC / Export Functional Component": {
-    "prefix": "iefc",
-    "body": [
-      "import { FC } from 'react';",
-      "",
-      "interface $1Props {",
-      "\t$2",
-      "};",
-      "",
-      "export const $1: FC<$1Props> = (props) => {",
-      "\treturn ($3);",
-      "};"
-    ],
-    "description": "import FC, create functional component and export"
   },
   "Functional Component Export Default": {
     "prefix": "fce",
@@ -62,29 +30,11 @@
       "\t$2",
       "};",
       "",
-      "const $1: FC<$1Props> = (props) => {",
-      "\treturn ($3);",
+      "const $1 = (props: $1Props) => {",
       "};",
       "",
       "export default $1"
     ],
     "description": "create functional component and export default"
-  },
-  "Import FC, Functional Component Export Default": {
-    "prefix": "ifce",
-    "body": [
-      "import { FC } from 'react';",
-      "",
-      "interface $1Props {",
-      "\t$2",
-      "};",
-      "",
-      "const $1: FC<$1Props> = (props) => {",
-      "\treturn ($3);",
-      "};",
-      "",
-      "export default $1"
-    ],
-    "description": "import FC, create functional component and export default"
   }
 }

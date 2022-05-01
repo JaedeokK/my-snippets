@@ -32,3 +32,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
   - "React" to "react"
 - Fix util snippets
   - "className" to "classNames"
+
+## [1.1.0] - update snippets
+- Remove react(ts) snippets
+  - Import FC / Functional Component
+  - Import FC / Export Functional Component
+  - Import FC, Functional Component Export Default
