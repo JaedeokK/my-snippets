@@ -12,6 +12,11 @@ This means I can add or remove features and modify existing ones as my needs.
 | `fc`    | Functional Component                             |
 | `efc`   | Export Functional Component                      |
 | `fce`   | Functional Component Export Default              |
+| `ust`   | useState                                         |
+| `uef`   | useEffect                                        |
+| `ume`   | useMemo                                          |
+| `uca`   | useCallback                                      |
+| `use`   | useSelector                                      |
 
 ### Next.js(ts)
 | Snippet | Renders                                          |
@@ -70,6 +75,38 @@ This means I can add or remove features and modify existing ones as my needs.
   };
 
   export default |;
+```
+
+#### ust - useState
+
+```typescript
+  const [|, set|] = useState|(|);
+```
+
+#### uef - useEffect
+
+```typescript
+  useEffect|(() => {
+    |
+  }, [|]);
+```
+
+#### ume - useMemo
+
+```typescript
+  const | = useMemo|(() => |, [|]);
+```
+
+#### uca - useCallback
+
+```typescript
+  const | = useCallback|((|) => |, [|]);
+```
+
+#### use - useSelector
+
+```typescript
+  const | = useSelector|((|) => |, [|]);
 ```
 
 ### Next.js(ts)
@@ -133,10 +170,10 @@ This means I can add or remove features and modify existing ones as my needs.
   const | = (|) => {|};
 ```
 
-#### cx - ClassName Bind
+#### cx - ClassNames Bind
 
 ```javascript
-  import className from 'classnames/bind';
+  import classNames from 'classnames/bind';
   import styles from './$1.module.scss';
 
   const cx = classNames.bind(styles);

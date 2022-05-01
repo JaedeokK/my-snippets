@@ -39,5 +39,26 @@
       "export default $1;"
     ],
     "description": "create functional component and export default"
+  },
+
+  "useState": {
+    "prefix": "ust",
+    "body": ["const [$1,set$1] = useState$2($3);"]
+  },
+  "useEffect": {
+    "prefix": "uef",
+    "body": ["useEffect$1(() => {", "  $2", "}, [$3]);"]
+  },
+  "useMemo": {
+    "prefix": "ume",
+    "body": ["const $1 = useMemo$2(() => $3, [$4]);"]
+  },
+  "useCallback": {
+    "prefix": "uca",
+    "body": ["const $1 = useCallback$2(($3) => $4, [$5]);"]
+  },
+  "useSelector": {
+    "prefix": "use",
+    "body": ["const $1 = useSelector$2(($3) => $4, [$5]);"]
   }
 }
