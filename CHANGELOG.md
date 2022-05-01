@@ -26,3 +26,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [1.0.1] - update change log
 - Add change log of v1.0.0
+
+## [1.0.2] - fix typo
+- Fix react-ts snippets
+  - "React" to "react"
+- Fix util snippets
+  - "className" to "classNames"

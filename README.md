@@ -52,7 +52,7 @@ This means I can add or remove features and modify existing ones as my needs.
 #### ifc - Import FC / Functional Component
 
 ```typescript
-  import { FC } from 'React';
+  import { FC } from 'react';
 
   interface |Props {
     |
@@ -78,7 +78,7 @@ This means I can add or remove features and modify existing ones as my needs.
 #### iefc - Import FC / Export Functional Component
 
 ```typescript
-  import { FC } from 'React';
+  import { FC } from 'react';
 
   interface |Props {
     |
@@ -106,7 +106,7 @@ This means I can add or remove features and modify existing ones as my needs.
 #### ifce - Import FC, Functional Component Export Default
 
 ```typescript
-  import { FC } from 'React';
+  import { FC } from 'react';
 
   interface |Props {
     |
@@ -183,7 +183,7 @@ This means I can add or remove features and modify existing ones as my needs.
 #### cx - ClassName Bind
 
 ```javascript
-  import className from 'classnames/bind';
+  import classNames from 'classnames/bind';
   import styles from './$1.module.scss';
 
   const cx = classNames.bind(styles);
