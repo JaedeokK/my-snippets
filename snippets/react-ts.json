@@ -2,11 +2,12 @@
   "Functional Component": {
     "prefix": "fc",
     "body": [
-      "interface $1Props {",
-      "\t$2",
+      "interface $1Props$2 {",
+      "\t$3",
       "}",
       "",
       "const $1 = (props: $1Props) => {",
+      "\treturn $4;",
       "};"
     ],
     "description": "create functional component"
@@ -14,11 +15,12 @@
   "Export Functional Component": {
     "prefix": "efc",
     "body": [
-      "interface $1Props {",
-      "\t$2",
-      "};",
+      "interface $1Props$2 {",
+      "\t$3",
+      "}",
       "",
       "export const $1 = (props: $1Props) => {",
+      "\treturn $4;",
       "};"
     ],
     "description": "create functional component and export"
@@ -26,14 +28,15 @@
   "Functional Component Export Default": {
     "prefix": "fce",
     "body": [
-      "interface $1Props {",
-      "\t$2",
-      "};",
+      "interface $1Props$2 {",
+      "\t$3",
+      "}",
       "",
       "const $1 = (props: $1Props) => {",
+      "\treturn $4;",
       "};",
       "",
-      "export default $1"
+      "export default $1;"
     ],
     "description": "create functional component and export default"
   }

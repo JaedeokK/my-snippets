@@ -37,36 +37,36 @@ This means I can add or remove features and modify existing ones as my needs.
 #### fc - Functional Component
 
 ```typescript
-  interface |Props {
+  interface |Props| {
     |
   };
 
   const | = (props: |Props) => {
-   return (|);
+   return |;
   };
 ```
 
 #### efc - Export Functional Component
 
 ```typescript
-  interface |Props {
+  interface |Props| {
     |
   };
 
   export const | = (props: |Props) => {
-   return (|);
+   return |;
   };
 ```
 
 #### fce - Functional Component Export Default
 
 ```typescript
-  interface |Props {
+  interface |Props| {
     |
   };
 
   const | = (props: |Props) => {
-   return (|);
+   return |;
   };
 
   export default |;

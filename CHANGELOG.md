@@ -38,3 +38,6 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
   - Import FC / Functional Component
   - Import FC / Export Functional Component
   - Import FC, Functional Component Export Default
+- Update react(ts) snippets
+  - remove `()` at return statement
+  - add cursor on end of Props for interface extends
