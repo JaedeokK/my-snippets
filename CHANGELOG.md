@@ -4,6 +4,14 @@ All notable changes to the "mysnippets" extension will be documented in this fil
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [2.0.0] - add react-ts snippets
+- Add react-ts snippets
+  - useState
+  - useEffect
+  - useMemo
+  - useCallback
+  - useSelector
+
 ## [1.1.0] - update react-ts snippets
 - Remove react-ts snippets
   - Import FC / Functional Component
