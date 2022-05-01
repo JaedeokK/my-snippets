@@ -170,10 +170,10 @@ This means I can add or remove features and modify existing ones as my needs.
   const | = (|) => {|};
 ```
 
-#### cx - ClassName Bind
+#### cx - ClassNames Bind
 
 ```javascript
-  import className from 'classnames/bind';
+  import classNames from 'classnames/bind';
   import styles from './$1.module.scss';
 
   const cx = classNames.bind(styles);
