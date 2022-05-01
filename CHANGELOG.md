@@ -41,3 +41,5 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Update react(ts) snippets
   - remove `()` at return statement
   - add cursor on end of Props for interface extends
+- Fix README.md
+  - fix util snippets

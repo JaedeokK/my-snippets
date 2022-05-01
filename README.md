@@ -24,11 +24,11 @@ This means I can add or remove features and modify existing ones as my needs.
 | Snippet | Renders                                          |
 | ------- | ------------------------------------------------ |
 | `af`    | Arrow Function                                   |
-| `fc`    | ClassName Bind                                   |
-| `ifc`   | Console                                          |
-| `efc`   | Console Error                                    |
-| `iefc`  | Console Log                                      |
-| `fce`   | Console Table                                    |
+| `cx`    | ClassName Bind                                   |
+| `cl`    | Console                                          |
+| `co`    | Console Log                                      |
+| `ce`    | Console Error                                    |
+| `ct`    | Console Table                                    |
 
 
 ## Full Expansions
@@ -148,16 +148,16 @@ This means I can add or remove features and modify existing ones as my needs.
   console.|(|);
 ```
 
-#### ce - Console Error
-
-```javascript
-  console.error(|);
-```
-
 #### cl - Console Log
 
 ```javascript
   console.log(|);
+```
+
+#### ce - Console Error
+
+```javascript
+  console.error(|);
 ```
 
 #### ct - Console Table
